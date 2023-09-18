@@ -1,3 +1,6 @@
+<!--Jag har gjort en version av bilden på figma, men inte hela vägen. 
+    Jag är väldigt nyfiken på hur jag gör för att få ankan att ligga ovanpå "boxen", 
+    har testat med z-index men inte fått det att fungera. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,23 +15,35 @@
     
         <div class="rectanglered">
             <form>
-                <label for="name">Full name:</label>
-                <input type="text" id="name" name="name">
-                <br> <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-                <br> <br>
-                <label for="subject">
-                    Message regarding:
-                </label>
-                <input type="text" id="subject" name="subject">
-                <br> <br>
-                <label for="subject">
-                    Message:
-                </label>
-                <input type="text" id="message" name="message">
+                <div class="label-and-input">
+                    <label for="name">Name:</label>
+                    <select name="name" class="select" id="name" >
+                        <option value="Maggan">Maggan</option>
+                        <option value="Bettan">Bettan</option>
+                        <option value="Pelle">Pelle</option>
+                        <option value="Bosse">Bosse</option>
+                    </select>
+                </div>
+                <div class="label-and-input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your email">
+                    <div class="line"></div>
+                </div>
+                <div class="label-and-input">
+                    <label for="subject">
+                        Message regarding:
+                    </label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+                    <div class="line"></div>
+                </div>
+                <div class="label-and-input">
+                    <label for="subject">
+                        Message:
+                    </label>
+                    <input type="text" id="message" name="message" placeholder="Please don't ask stupid questions">
+                    <div class="line"></div>
+                </div>
             </form>
-            <br> <br>
             <button class="button1">SEND MESSAGE</button>
         </div>
         <div class="rectangleorange">
